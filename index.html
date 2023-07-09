@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+    </style>
+</head>
+<body>
+<div id="hello"></div>
+<div class="menu">
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="bio.html">BIOGRAPHY</a></li><!--
+    -->
+            <li><a href="travel.html">TRAVEL</a></li><!--
+    -->
+            <li><a href="photos.html">PHOTO JOURNAL</a></li><!--
+    -->
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+<script>
+    var string="HELLO! \nI'M JANA HRISTOVA"
+    var br = 100;
+    var i=0;
+
+    function anim(){
+        if(i<string.length) {
+            document.getElementById("hello").innerHTML+=string.charAt(i);
+            i++;
+            setTimeout(anim, br);
+        }
+    }
+
+    anim();
+
+</script>
+
+</body>
+</html>

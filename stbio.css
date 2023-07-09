@@ -1,0 +1,83 @@
+body {
+    background-color: #03101f;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.navigation li {
+    margin-left: 10px;
+}
+
+.navigation a {
+    color: #d9d6b4;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+}
+.sodr{
+    width: 90%;
+    overflow: hidden;
+    margin:auto;
+    background-color: #1f5887;
+    display: flex;
+    align-items: center;
+    border: 5px solid #d9d6b4;
+    border-radius: 20px;
+}
+.slika{
+    display: flex;
+    justify-content: center;
+    width:45%;
+    float: left;
+    margin-top: 20px;
+}
+
+.bubble{
+    display: block;
+    width:45%;
+    font-size:17px;
+    text-align: center;
+    position: relative;
+    color: #d9d6b4;
+    background-color: #03101f;
+    padding: 20px;
+    border: 2px solid #d9d6b4;
+    border-radius: 20px;
+    float: left;
+}
+
+.bubble:before {
+    content: "";
+    position: absolute;
+    border-left: 50px solid transparent;
+    border-right: 50px solid #d9d6b4;
+    border-top: 50px solid #d9d6b4;
+    border-bottom: 50px solid transparent;
+    left: -101px;
+    top: 100px;
+}
+
+.bubble:after {
+    content: "";
+    position: absolute;
+    border-left: 49px solid transparent;
+    border-right: 49px solid #03101f;
+    border-top: 49px solid #03101f;
+    border-bottom: 49px solid transparent;
+    left: -96px;
+    top: 102px;
+}

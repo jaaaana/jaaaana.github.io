@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #03101f;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.navigation li {
+    margin-left: 10px;
+}
+
+.navigation a {
+    color: #d9d6b4;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.sodrzhina {
+    width: 100%;
+    margin: auto;
+}
+
+.slides, .slides1, .slides2, .slides3, .slides4 {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.praga, .ger, .ven, .sic, .ams {
+    width: 49%;
+    position: relative;
+    margin-left: 5px;
+    background-color: rgba(31,88,135, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.praga, .ven {
+    margin-bottom: 30px;
+}
+
+.ger {
+    margin-bottom: 20px;
+}
+
+.kol1 {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.kol2 {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+h1 {
+    color: #d9d6b4;
+    display: inline;
+}
+
+h2 {
+    font-family: 'Zeyada', cursive;
+    color: #d9d6b4;
+    display: inline;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 80%;
+    padding: 10px;
+    transition: 0.7s ease;
+    margin-right: 30px;
+    color: #d9d6b4;
+    font-weight: bold;
+    font-size: 25px;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(3, 16, 31, 0.7);
+}
+
+.smena {
+    animation-name: fade;
+    animation-duration: 1.2s;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: .7
+    }
+    to {
+        opacity: 1
+    }
+}
+

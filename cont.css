@@ -1,0 +1,133 @@
+body {
+    background-color: #03101f;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.navigation li {
+    margin-left: 10px;
+}
+
+.navigation a {
+    color: #d9d6b4;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.forma {
+    margin: auto;
+    width: 40%;
+    border: 2px solid #d9d6b4;
+    border-radius: 5%;
+    padding: 20px;
+    background-color: #1f5887;
+}
+
+.gl {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.pliko{
+    margin-top: 500px;
+    margin-left: 50px;
+}
+
+.pliko1{
+    margin-right: 50px;
+}
+
+input, textarea {
+    padding: 15px;
+    border: 1px solid #d9d6b4;
+    border-radius: 10px;
+    background-color: #03101f;
+    outline: none;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    color: #d9d6b4;
+    font-size: 30px;
+}
+
+
+input[placeholder] {
+    color: #d9d6b4;
+}
+
+textarea[placeholder] {
+    color: #d9d6b4;
+}
+
+#button {
+    color: #d9d6b4;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+}
+
+.tekst {
+    color: #d9d6b4;
+    text-align: center;
+    font-size: 40px;
+}
+
+.fa {
+    padding: 30px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook, .fa-instagram, .fa-twitter {
+    border: 2px solid #d9d6b4;
+    color: #d9d6b4;
+    border-radius: 7px;
+    background-color: #03101f;
+
+}
+
+.linkovi {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.social {
+    display: block;
+    margin: auto;
+    background-color: #1f5887;
+    border: 2px solid #d9d6b4;
+    width: 70%;
+    border-radius: 7px;
+}
+
+#button:hover{
+    color: #03101f;
+    background-color: #d9d6b4;
+}

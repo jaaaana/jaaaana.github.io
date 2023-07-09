@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: #03101f;
+    font-family: 'Abril Fatface', cursive;
+    overflow-x: hidden;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.navigation li {
+    margin-left: 10px;
+}
+
+.navigation a {
+    color: #d9d6b4;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.naslov{
+    background: #1f5887;
+    color: #d9d6b4;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+hr{
+    color: #03101f;
+    height: 5px;
+
+}
+.nastani ul {
+    background: #1f5887;
+    padding: 50px 0;
+    color: #d9d6b4;
+}
+
+.nastani ul li {
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding-top: 100px;
+    background: #d9d6b4;
+}
+
+.nastani ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #03101f;
+}
+
+.nastani ul li div {
+    position: relative;
+    bottom: 0;
+    width: 500px;
+    padding: 15px;
+    background: #03101f;
+}
+
+.nastani ul li div::before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.nastani ul li:nth-child(2n+1) div {
+    left: 45px;
+}
+
+.nastani ul li:nth-child(2n+1) div::before {
+    left: -13px;
+    border-width: 10px 20px 10px 0;
+    border-color: transparent #03101f transparent transparent;
+}
+
+.nastani ul li:nth-child(2n) div {
+    left: -540px;
+}
+
+.nastani ul li:nth-child(2n) div::before {
+    right: -13px;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #03101f;
+}
+h2{
+    font-size: 25px;
+}

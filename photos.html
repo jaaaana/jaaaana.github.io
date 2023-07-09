@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Journal</title>
+    <link rel="stylesheet" href="stphoto.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+    </style>
+</head>
+<body>
+<div class="menu">
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">HOME</a></li><!--
+    -->
+            <li><a href="bio.html">BIOGRAPHY</a></li><!--
+    -->
+            <li><a href="travel.html">TRAVEL</a></li><!--
+    -->
+            <li><a>PHOTO JOURNAL</a></li><!--
+    -->
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="sodrzhina">
+    <div class="praga kol1">
+        <span><h1>Prague</h1><h2>, Czech Republic</h2></span>
+        <div class="slides smena">
+            <img src="pr1_2.JPG" style="width: 100%;">
+        </div>
+        <div class="slides smena">
+            <img src="pr2_2.JPG" style="width: 100%;">
+        </div>
+        <div class="slides smena">
+            <img src="pr3_2.JPG" style="width: 100%;">
+        </div>
+        <div class="slides smena">
+            <img src="pr4_2.JPG" style="width: 100%;">
+        </div>
+        <div class="slides smena">
+            <img src="pr5_2.JPG" style="width: 100%;">
+        </div>
+        <div class="slides smena">
+            <img src="pr6_2.JPG" style="width: 100%;">
+        </div>
+        <a class="prev" onclick="dvizhenje(-1, 0)">&#10094;</a>
+        <a class="next" onclick="dvizhenje(1, 0)">&#10095;</a>
+    </div>
+    <div class="ger kol2">
+        <span><h1>Cologne</h1><h2>, Germany</h2></span>
+        <div class="slides1 smena">
+            <img src="ger1.jpg" style="width: 100%;">
+        </div>
+        <div class="slides1 smena">
+            <img src="ger2.jpg" style="width: 100%;">
+        </div>
+        <div class="slides1 smena">
+            <img src="ger3.jpg" style="width: 100%;">
+        </div>
+        <div class="slides1 smena">
+            <img src="ger4.JPG" style="width: 100%;">
+        </div>
+        <div class="slides1 smena">
+            <img src="ger5.JPG" style="width: 100%;">
+        </div>
+        <div class="slides1 smena">
+            <img src="ger6.JPG" style="width: 100%;">
+        </div>
+        <a class="prev" onclick="dvizhenje(-1, 1)">&#10094;</a>
+        <a class="next" onclick="dvizhenje(1, 1)">&#10095;</a>
+    </div>
+    <div class="ven kol1">
+        <span><h1>Venice</h1><h2>, Italy</h2></span>
+        <div class="slides2 smena">
+            <img src="ven1.jpg" style="width: 100%;">
+        </div>
+        <div class="slides2 smena">
+            <img src="ven2.jpg" style="width: 100%;">
+        </div>
+        <div class="slides2 smena">
+            <img src="ven3.jpg" style="width: 100%;">
+        </div>
+        <div class="slides2 smena">
+            <img src="ven4.jpg" style="width: 100%;">
+        </div>
+        <a class="prev" onclick="dvizhenje(-1, 2)">&#10094;</a>
+        <a class="next" onclick="dvizhenje(1, 2)">&#10095;</a>
+    </div>
+    <div class="sic kol2">
+        <span><h1>Sicily</h1><h2>, Italy</h2></span>
+        <div class="slides3 smena">
+            <img src="sic1.jpg" style="width: 100%;">
+        </div>
+        <div class="slides3 smena">
+            <img src="sic2.jpg" style="width: 100%;">
+        </div>
+        <div class="slides3 smena">
+            <img src="sic3.jpg" style="width: 100%;">
+        </div>
+        <div class="slides3 smena">
+            <img src="sic4.jpg" style="width: 100%;">
+        </div>
+        <div class="slides3 smena">
+            <img src="sic5.jpg" style="width: 100%;">
+        </div>
+        <div class="slides3 smena">
+            <img src="sic6.jpeg" style="width: 100%;">
+        </div>
+        <a class="prev" onclick="dvizhenje(-1, 3)">&#10094;</a>
+        <a class="next" onclick="dvizhenje(1, 3)">&#10095;</a>
+    </div>
+    <div class="ams kol1">
+        <span><h1>Amsterdam, Rotterdam</h1><h2>, The Netherlands</h2></span>
+        <div class="slides4 smena">
+            <img src="ams1_2.jpg" style="width: 100%;">
+        </div>
+        <div class="slides4 smena">
+            <img src="ams2_2.jpg" style="width: 100%;">
+        </div>
+        <div class="slides4 smena">
+            <img src="ams3_2.jpg" style="width: 100%;">
+        </div>
+        <div class="slides4 smena">
+            <img src="ams4_2.JPG" style="width: 100%;">
+        </div>
+        <div class="slides4 smena">
+            <img src="ams5_2.JPG" style="width: 100%;">
+        </div>
+        <a class="prev" onclick="dvizhenje(-1, 4)">&#10094;</a>
+        <a class="next" onclick="dvizhenje(1, 4)">&#10095;</a>
+    </div>
+</div>
+<script>
+    let indeks = [1, 1, 1, 1, 1];
+    let id = ["slides", "slides1", "slides2", "slides3", "slides4"]
+    prikaz(1, 0);
+    prikaz(1, 1);
+    prikaz(1, 2);
+    prikaz(1, 3);
+    prikaz(1, 4);
+
+    function dvizhenje(n, no) {
+        prikaz(indeks[no] += n, no);
+    }
+    function prikaz(n, no) {
+        let i;
+        let m;
+        m= document.getElementsByClassName(id[no]);
+        if (n > m.length) {
+            indeks[no] = 1;
+        }
+        if (n < 1) {
+            indeks[no] = m.length;
+        }
+        for (i = 0; i < m.length; i++) {
+            m[i].style.display = "none";
+        }
+        m[indeks[no] - 1].style.display = "block";
+    }
+</script>
+</body>
+</html>
